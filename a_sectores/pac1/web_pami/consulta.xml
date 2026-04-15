@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <PamiMendozaAutorizaResponse xmlns="http://tempuri.org/PAMIMENDOZA/Service1">
+      <PamiMendozaAutorizaResult><Requerimiento><Bioquimico CodUsu='$cod_usu' Clave='$clave'/><Afiliado NroAfi='$numero_credencial'/></Requerimiento></PamiMendozaAutorizaResult>
+    </PamiMendozaAutorizaResponse>
+  </soap:Body>
+</soap:Envelope>

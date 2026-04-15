@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?><Mensaje xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><EncabezadoMensaje><VersionMsj>1.0</VersionMsj><Rta><CodRtaGeneral>00</CodRtaGeneral><MensajeDisplay>OK, ASOCIADO HABILI-TADO                OK, ASOCIADO HABILI-TADO                P.2 310 CX  NO GRAV..</MensajeDisplay><MensajePrinter>                 OSDE                 
+  Organizacion de Servicios Directos  
+             Empresarios              
+--------------------------------------
+          VERIFICAR ASOCIADO          
+--------------------------------------
+Nro.Referencia  : 98                  
+Nro. Transaccion: 220602              
+--------------------------------------
+Prestador: SEGURA SANDRA BELEN - MENDO
+CUIT     : 27303089123                
+Nro.Terminal: 1654                    
+--------------------------------------
+Afiliado : 61496394904                
+Nombre: DUARTE VENIER MARIA GISELLE(F)
+Nro.Plan: 2 310  Cond.IVA: IVA Exento 
+Cobertura: CX                         
+Fecha de Atencion: 29/06/2018         
+--------------------------------------
+                                      
+OK, ASOCIADO HABILI-TADO              
+  P.2 310 CX  NO GRAV.                
+                                      
+--------------------------------------
+ESTA TRANSACCION NO QUEDA REGISTRADA  
+EN SU CUENTA CORRIENTE. ES SOLO PARA  
+CONSULTA. DEBE REALIZAR REGISTRACION  
+--------------------------------------
+   29/06/2018 08:31 PuntoSalud.com    
+</MensajePrinter><CodigoBarras>20180629IT220602</CodigoBarras><CodigoQR /></Rta><GeneradorRespuesta>30546741253</GeneradorRespuesta><NroReferencia>166220602</NroReferencia><NroReferenciaCancel /><TipoTransaccion>01A</TipoTransaccion><IdMsj>906179763</IdMsj><InicioTrx><FechaTrx>20180629</FechaTrx><HoraTrx>080652</HoraTrx></InicioTrx><Terminal><TipoTerminal>PC</TipoTerminal><NumeroTerminal>1234</NumeroTerminal></Terminal><SetCaracteres /><Financiador><CodigoFinanciador>11</CodigoFinanciador><CuitFinanciador>30546741253</CuitFinanciador></Financiador><Prestador><CuitPrestador>27303089123</CuitPrestador><SucursalPrestador /><RazonSocial>SEGURA SANDRA BELEN - MENDOZA</RazonSocial><CodigoParaFinanciador>001100008</CodigoParaFinanciador><NroTransaccionInterno /></Prestador></EncabezadoMensaje><EncabezadoAtencion><Efector><TipoMatriculaEfector /><NroMatriculaEfector /><CuitEfector /></Efector><Prescriptor><FechaReceta /><ApellidoPrescriptor /><NombrePrescriptor /><ProvinciaPrescriptor /><TipoPrescriptor /><NroMatriculaPrescriptor /><CuitPrescriptor /><EspecialidadPrescriptor /><CodParaFinanciadorPrescriptor /></Prescriptor><Beneficiario><ApellidoBeneficiario>DUARTE VENIER MARIA GISELLE</ApellidoBeneficiario><NombreBeneficiario /><Sexo>F</Sexo><FechaNacimiento>20021203</FechaNacimiento></Beneficiario><Credencial><NumeroCredencial>61496394904</NumeroCredencial><Track /><ModoIngreso /><PlanCredencial>2310</PlanCredencial><CondicionIVA>E</CondicionIVA></Credencial><CoberturaEspecial>CRONICO</CoberturaEspecial><Preautorizacion><CodigoPreautorizacion /><FechaPreautorizacion /></Preautorizacion><Documentacion /><Atencion><FechaAtencion /><HoraAtencion /></Atencion><Diagnostico><CodDiagnostico /><DescripcionDiagnostico /><Nomenclador /></Diagnostico><CodFinalizacionTratamiento /><MensajeParaFinanciador /></EncabezadoAtencion><DetalleProcedimientos><NroItem /><CodPreautorizacion /><CodPrestacion /><CodAlternativo /><PiezaDental /><CaraDental /><TipoPrestacion>1</TipoPrestacion><ArancelPrestacion /><CantidadSolicitada /><CantidadAprobada /><SaldoPrestaciones /><DescripcionPrestacion /><Facturacion /><ImporteACargoAfiliado /><ImporteCobertura /><CodRta /><MensajeRta /><CodAutorizacion /><CodDiagnosticoPrestacion /><IVA /></DetalleProcedimientos></Mensaje>
+

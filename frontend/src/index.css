@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f1f5f9; /* Subtle gray background */
+  color: #334155;
+}
+
+.sidebar-container {
+  background-color: #ffffff !important;
+  border-right: 1px solid #e2e8f0;
+  width: 260px;
+  min-height: calc(100vh - 60px);
+  transition: all 0.3s ease-in-out;
+  z-index: 1040;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar-container {
+    position: fixed;
+    top: 60px;
+    left: -260px;
+    height: calc(100vh - 60px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    z-index: 1200; /* Above the backdrop */
+  }
+  .sidebar-container.show {
+    left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar-container:not(.show) {
+    width: 0;
+    opacity: 0;
+    pointer-events: none;
+    border-right: none;
+  }
+}
+
+.sidebar-link {
+  color: #64748b !important;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border-left: 4px solid transparent;
+  white-space: nowrap;
+}
+
+.sidebar-link:hover {
+  background-color: #f1f5f9 !important;
+  color: #0ea5e9 !important;
+}
+
+.sidebar-link.active {
+  background-color: #f0f9ff !important;
+  color: #0369a1 !important;
+  border-left: 4px solid #0ea5e9;
+}
+
+/* Header Refinement */
+.navbar-custom {
+  background-color: #ffffff !important;
+  border-top: 6px solid #AEEEEE !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  z-index: 1050;
+}
+
+.brand-text {
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #0891b2;
+  text-transform: uppercase;
+}
+
+/* Custom AG Grid Theme - Irrigación Style */
+.theme-irrigacion {
+    --ag-header-background-color: #334155 !important;
+    --ag-header-foreground-color: #ffffff !important;
+    --ag-border-color: transparent !important;
+    --ag-row-border-color: transparent !important;
+    --ag-header-column-separator-display: none;
+    --ag-header-column-resize-handle-display: none;
+    --ag-row-hover-color: #e2e8f0 !important;
+    --ag-selected-row-background-color: #d1e9ff !important;
+    --ag-font-size: 13px;
+    --ag-font-family: 'Inter', sans-serif;
+    user-select: text !important;
+}
+
+.theme-irrigacion .ag-cell {
+    user-select: text !important;
+}
+
+/* Zebra Stripes */
+.theme-irrigacion .ag-row-odd {
+    background-color: #f8fafc !important; /* Light Gray */
+}
+.theme-irrigacion .ag-row-even {
+    background-color: #ffffff !important; /* White */
+}
+
+/* Header Styling */
+.theme-irrigacion .ag-header-cell-label {
+    justify-content: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.theme-irrigacion .ag-header-cell {
+    border-right: 1px solid rgba(255,255,255,0.1) !important;
+}
+
+/* Removing all grid lines between rows/cols */
+.theme-irrigacion .ag-cell {
+    border: none !important;
+    display: flex;
+    align-items: center;
+}
+
+/* Draggable Modal Styles */
+.draggable-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-draggable-modal {
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.cursor-move { cursor: move; }
+
+.hover-scale { transition: transform 0.2s ease; }
+.hover-scale:hover { transform: scale(1.25); }
+
+.bg-light-blue { background-color: #f1f5f9 !important; }

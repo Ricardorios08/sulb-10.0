@@ -1,0 +1,68 @@
+<?ph 
+
+
+711
+736
+475
+
+
+
+
+}elseif ($nro_practica == 764){
+include ("detalle_proteinograma.php");
+$pdf->AddPage();
+}elseif ($nro_practica == 413){
+include ("detalle_curva.php");
+$pdf->AddPage();
+}elseif ($nro_practica == 110){
+include ("detalle_bilirrubina.php");
+$pdf->AddPage();
+}elseif ($nro_practica == 13){
+include ("detalle_aglutininas.php");
+$pdf->AddPage();
+}elseif ($nro_practica == 546){
+include ("detalle_ionograma.php");
+$pdf->AddPage();
+}elseif ($nro_practica == 193){
+include ("detalle_creatinina.php");
+$pdf->AddPage();
+}elseif ($nro_practica == 481){
+include ("detalle_hepatograma.php");
+$pdf->AddPage();
+}elseif ($nro_practica == 2734){
+include ("detalle_antigeno.php");
+$pdf->AddPage();
+}elseif ($nro_practica == 136){
+include ("detalle_calcio.php");
+$pdf->AddPage();
+}elseif ($nro_practica == 363){
+include ("detalle_orina.php");
+$pdf->AddPage();
+}elseif ($nro_practica == 654){
+include ("detalle_magnesio.php");
+$pdf->AddPage();
+}elseif ($nro_practica == 767){
+include ("detalle_proteinuria.php");
+$pdf->AddPage();
+}elseif ($nro_practica == 35){
+include ("detalle_antibiograma.php");
+$pdf->AddPage();
+}elseif ($nro_practica == 105){
+include ("detalle_bacteriologica.php");
+$pdf->AddPage();
+}elseif ($nro_practica == 547){
+include ("detalle_urinario.php");
+$pdf->AddPage();
+}elseif ($nro_practica == 171){
+include ("detalle_coagulograma.php");
+$pdf->AddPage();
+}elseif ($nro_practica == 615){
+include ("detalle_lipidograma.php");
+$pdf->AddPage();
+ 
+
+
+
+
+
+

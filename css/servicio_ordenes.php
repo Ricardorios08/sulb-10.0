@@ -1,0 +1,424 @@
+<?
+require_once("nusoap.php");
+
+$ns = 'http://sistemadeordenes.com.ar/sulb/nusoap/lib'; //Espacio de nombres o sitio; sitio donde estará alojado el web service
+
+$server = new soap_server();
+$server->configureWSDL('CanadaTaxCalculator',$ns);
+$server->wsdl->schemaTargetNamespace=$ns;
+$server->register('CalculateOntarioTax',array('amount' => 'xsd:string' , 'apellido' => 'xsd:string'),array('return' => 'xsd:string'),$ns);
+$server->register('pacientes',array('sql' => 'xsd:string' , 'apellido' => 'xsd:string'),array('return' => 'xsd:string'),$ns);
+$server->register('informes',array('sql' => 'xsd:string' , 'apellido' => 'xsd:string'),array('return' => 'xsd:string'),$ns);
+$server->register('nro_os',   array('sql' => 'xsd:string' , 'apellido' => 'xsd:string'),array('return' => 'xsd:string'),$ns);
+$server->register('arancel',   array('sql' => 'xsd:string' , 'apellido' => 'xsd:string'),array('return' => 'xsd:string'),$ns);
+$server->register('practicas',array('sql' => 'xsd:string' , 'apellido' => 'xsd:string'),array('return' => 'xsd:string'),$ns);
+$server->register('practicas_autorizadas',array('sql' => 'xsd:string' , 'apellido' => 'xsd:string'),array('return' => 'xsd:string'),$ns);
+$server->register('cuenta_abm',array('variable1' => 'xsd:string' , 'variable2' => 'xsd:string'),array('return' => 'xsd:string'),$ns);
+$server->register('practicas_ind',array('variable1' => 'xsd:string' , 'variable2' => 'xsd:string'),array('return' => 'xsd:string'),$ns);
+$server->register('buscar_orden',array('cod_grabacion' => 'xsd:string' , 'apellido' => 'xsd:string'),array('return' => 'xsd:string'),$ns);
+$server->register('matricula_abm',array('variable1' => 'xsd:string' , 'variable2' => 'xsd:string'),array('return' => 'xsd:string'),$ns);
+$server->register('nombre_abm',array('variable1' => 'xsd:string' , 'variable2' => 'xsd:string'),array('return' => 'xsd:string'),$ns);
+
+
+$server->register('denominacion_abm',array('variable1' => 'xsd:string' , 'variable2' => 'xsd:string'),array('return' => 'xsd:string'),$ns);
+$server->register('por_cuenta_abm',array('variable1' => 'xsd:string' , 'variable2' => 'xsd:string'),array('return' => 'xsd:string'),$ns);
+
+
+$server->register('facturacion',   array('sql' => 'xsd:string' , 'apellido' => 'xsd:string'),array('return' => 'xsd:string'),$ns);
+
+
+function CalculateOntarioTax($amount,$apellido){
+
+$taxcalc=$amount.$apellido;
+
+return new soapval('return','xsd:string',$taxcalc);
+}
+
+
+
+function pacientes($sql){
+include ("../../conexiones/config.inc.php");
+$sql1=$sql;
+mysql_query($sql1);
+
+$a = mysql_insert_id();
+return new soapval('return','xsd:string',$a);
+}
+
+function nro_os($sql){
+include ("../../conexiones/config.inc.php");
+$nro_os=$sql;
+
+$sql2="select * from datos_os where nro_os > 999 and nro_os = $nro_os";
+$result2 = $db->Execute($sql2);
+$nro_os1=$result2->fields["nro_os"];
+
+if ($nro_os1 == ""){
+$nro_os = "NO EXISTE OBRA SOCIAL EN ABM";
+}
+
+
+return new soapval('return','xsd:string',$nro_os);
+}
+
+
+
+function arancel($sql){
+include ("../../conexiones/config.inc.php");
+$nro_os=$sql;
+
+$sql2="select * from arancel where nro_os > 999 and nro_os = $nro_os";
+$result2 = $db->Execute($sql2);
+$nro_os1=$result2->fields["nro_os"];
+
+if ($nro_os1 == ""){
+$nro_os = "NO EXISTE OBRA SOCIAL EN ABM";
+}
+
+
+return new soapval('return','xsd:string',$nro_os);
+}
+
+
+function facturacion($sql){
+include ("../../conexiones/config.inc.php");
+$nro_os=$sql;
+
+$sql2="select * from op_facturacion where nro_os > 999 and nro_os = $nro_os";
+$result2 = $db->Execute($sql2);
+$nro_os1=$result2->fields["nro_os"];
+
+if ($nro_os1 == ""){
+$nro_os = "NO EXISTE OBRA SOCIAL EN ARANCEL";
+}
+
+
+return new soapval('return','xsd:string',$nro_os);
+}
+
+
+function informes(){
+include ("../../conexiones/config.inc.php");
+$nro_os=$sql;
+
+$sql2="select * from mensaje";
+$result2 = $db->Execute($sql2);
+$nro_os1=$result2->fields["mensaje"];
+
+if ($nro_os1 == ""){
+$nro_os = "SIN MENSAJE";
+}else{
+$nro_os = $nro_os;
+}
+
+
+return new soapval('return','xsd:string',"asdas".$nro_os);
+}
+
+
+function por_cuenta_abm($variable1){
+include ("../../conexiones/config.inc.php");
+$nro_laboratorio=$variable1;
+
+$sql21="select * from afip where nro_laboratorio = '$nro_laboratorio'";
+$result2 = $db->Execute($sql21);
+$nro_labo=$result2->fields["nro_laboratorio"];
+$cuit=$result2->fields["nro_afip"];
+
+$prefijo = substr($cuit,0,2);
+$dni= substr($cuit,3,8);
+$sufijo= substr($cuit,12,1);
+
+$cuit1 = $prefijo.$dni.$sufijo;
+
+
+
+$sql2="select * from facturante where nro_laboratorio = '$nro_labo' and facturante = 'SI'";
+$result2 = $db->Execute($sql2);
+$nro_labo=$result2->fields["nro_laboratorio"];
+
+$sql2="select * from datos_laboratorio where nro_laboratorio = '$nro_labo'";
+$result2 = $db->Execute($sql2);
+$nombre_laboratorio=$result2->fields["nombre_laboratorio"];
+
+if ($nro_labo == ""){
+$nro_labo1 = "CUENTA EN ABM NO EXISTENTE O CUENTA NO FACTURANTE";
+}else{
+$nro_labo1 = "CUENTA ABM ".$nombre_laboratorio." (".$nro_laboratorio.") HABILITADA. CUIT N°: ".$cuit1; 
+}
+
+return new soapval('return','xsd:string',$nro_labo1);
+return new soapval('return','xsd:string',$nro_labo);
+}
+
+
+function denominacion_abm($variable1){
+include ("../../conexiones/config.inc.php");
+$nro_laboratorio=$variable1;
+
+$sql2="select * from datos_laboratorio where nombre_laboratorio like '$nro_laboratorio%'";
+$result2 = $db->Execute($sql2);
+$nombre_laboratorio=$result2->fields["nombre_laboratorio"];
+$nro_laboratorio=$result2->fields["nro_laboratorio"];
+ 
+$sql21="select * from afip where `nro_laboratorio` = '$nro_laboratorio'";
+$result2 = $db->Execute($sql21);
+$cuit=$result2->fields["nro_afip"];
+
+$prefijo = substr($cuit,0,2);
+$dni= substr($cuit,3,8);
+$sufijo= substr($cuit,12,1);
+
+$cuit1 = $prefijo.$dni.$sufijo;
+
+
+
+$cuit1 = $prefijo.$dni.$sufijo;
+
+
+
+
+if ($nombre_laboratorio == ""){
+$nro_labo1 = "CUENTA EN ABM NO EXISTENTE O CUENTA NO FACTURANTE";
+}else{
+
+$nro_labo1 = "CUENTA ABM ".$nombre_laboratorio." (".$nro_laboratorio.") HABILITADA. CUIT N°: ".$cuit1; 
+}
+
+return new soapval('return','xsd:string',$nro_labo1);
+return new soapval('return','xsd:string',$nro_labo);
+}
+
+
+function matricula_abm($variable1){
+include ("../../conexiones/config.inc.php");
+$nro_laboratorio=$variable1;
+
+$sql21="select * from afip where nro_afip = '$nro_laboratorio'";
+$result2 = $db->Execute($sql21);
+$nro_labo=$result2->fields["nro_laboratorio"];
+
+
+$sql2="select * from facturante where nro_laboratorio = '$nro_labo' and facturante = 'SI'";
+$result2 = $db->Execute($sql2);
+$nro_labo=$result2->fields["nro_laboratorio"];
+
+$sql2="select * from datos_laboratorio where nro_laboratorio = '$nro_labo'";
+$result2 = $db->Execute($sql2);
+$nombre_laboratorio=$result2->fields["nombre_laboratorio"];
+
+
+
+if ($nro_labo == ""){
+$nro_labo1 = "CUENTA EN ABM NO EXISTENTE O CUENTA NO FACTURANTE";
+}else{
+$nro_labo1 = $nro_labo;
+}
+
+
+return new soapval('return','xsd:string',$nro_labo1);
+return new soapval('return','xsd:string',$nro_labo);
+}
+
+
+function cuenta_abm($variable1){
+include ("../../conexiones/config.inc.php");
+$nro_laboratorio=$variable1;
+
+$sql21="select * from afip where nro_afip = '$nro_laboratorio'";
+$result2 = $db->Execute($sql21);
+$nro_labo=$result2->fields["nro_laboratorio"];
+$cuit=$result2->fields["nro_afip"];
+
+$prefijo = substr($cuit,0,2);
+$dni= substr($cuit,3,8);
+$sufijo= substr($cuit,12,1);
+
+$cuit1 = $prefijo.$dni.$sufijo;
+ 
+$sql2="select * from facturante where nro_laboratorio = '$nro_labo' and facturante = 'SI'";
+$result2 = $db->Execute($sql2);
+$nro_labo=$result2->fields["nro_laboratorio"];
+
+$sql2="select * from datos_laboratorio where nro_laboratorio = '$nro_labo'";
+$result2 = $db->Execute($sql2);
+$nombre_laboratorio=$result2->fields["nombre_laboratorio"];
+
+
+
+if ($nro_labo == ""){
+$nro_labo1 = "CUENTA EN ABM NO EXISTENTE O CUENTA NO FACTURANTE";
+}else{
+$nro_labo1 = "CUENTA ABM ".$nombre_laboratorio." (".$nro_labo.") HABILITADA. CUIT N°: ".$cuit1; 
+}
+
+
+return new soapval('return','xsd:string',$nro_labo1);
+return new soapval('return','xsd:string',$nro_labo);
+}
+
+
+
+
+function nombre_abm($variable1){
+include ("../../conexiones/config.inc.php");
+$nro_laboratorio=$variable1;
+
+$sql21="select * from afip where nro_afip = '$nro_laboratorio'";
+$result2 = $db->Execute($sql21);
+$nro_labo=$result2->fields["nro_laboratorio"];
+
+
+$sql2="select * from facturante where nro_laboratorio = '$nro_labo' and facturante = 'SI'";
+$result2 = $db->Execute($sql2);
+$nro_labo=$result2->fields["nro_laboratorio"];
+
+$sql2="select * from datos_laboratorio where nro_laboratorio = '$nro_labo'";
+$result2 = $db->Execute($sql2);
+$nombre_laboratorio=$result2->fields["nombre_laboratorio"];
+
+
+
+if ($nro_labo == ""){
+$nro_labo1 = "CUENTA EN ABM NO EXISTENTE O CUENTA NO FACTURANTE";
+}else{
+$nro_labo1 = $nombre_laboratorio;
+}
+
+
+return new soapval('return','xsd:string',$nro_labo1);
+return new soapval('return','xsd:string',$nro_labo);
+}
+
+
+function practicas($sql,$apellido){
+include ("../../conexiones/config.inc.php");
+$practicas=$sql;
+$nro_os=$apellido; 
+
+$sql2="select * from a_practicas_rechazadas where nro_os = $nro_os and cod_practica = $practicas and tipo = 'A'";
+$result2 = $db->Execute($sql2);
+$cod_practica=$result2->fields["cod_practica"];
+$motivo=$result2->fields["motivo"];
+$fecha=$result2->fields["fecha"];
+
+
+$sql2="select * from convenio_practica where cod_practica = $practicas";
+$result2 = $db->Execute($sql2);
+$nombre_practica=$result2->fields["practica"];
+
+$sql2="select * from datos_os where nro_os = $nro_os";
+$result2 = $db->Execute($sql2);
+$sigla=$result2->fields["practica"];
+
+
+
+$dia = substr($fecha,8,2);
+$mes = substr($fecha,5,2);
+$anio = substr($fecha,0,4);
+$fecha = $dia."/".$mes."/".$anio;
+
+if ($cod_practica != ""){
+$motivo1 = "RECHAZA PRACTICA N° ".$cod_practica."  ".$nombre_practica." de la Obra Social: ".$sigla." (".$nro_os.") MOTIVO: ".$motivo." FECHA INHIBICION: (".$fecha.")";
+}
+
+
+
+return new soapval('return','xsd:string',$motivo1);
+}
+
+
+function practicas_ind($variable1,$variable2){
+include ("../../conexiones/config.inc.php");
+$nro_practica=$variable1;
+$nro_os=$variable2; 
+
+$sql2="select * from a_practicas_rechazadas where nro_os = $nro_os and cod_practica = $nro_practica";
+$result2 = $db->Execute($sql2);
+$cod_practica=$result2->fields["cod_practica"];
+$motivo=$result2->fields["motivo"];
+$fecha=$result2->fields["fecha"];
+
+
+$sql2="select * from convenio_practica where cod_practica = $nro_practica";
+$result2 = $db->Execute($sql2);
+$nombre_practica=$result2->fields["practica"];
+
+$sql2="select * from datos_os where nro_os = $nro_os";
+$result2 = $db->Execute($sql2);
+$sigla=$result2->fields["practica"];
+
+
+
+$dia = substr($fecha,8,2);
+$mes = substr($fecha,5,2);
+$anio = substr($fecha,0,4);
+$fecha = $dia."/".$mes."/".$anio;
+
+if ($cod_practica != ""){
+$motivo1 = "RECHAZA PRACTICA N° ".$nro_practica."  ".$nombre_practica." de la Obra Social: ".$sigla." (".$nro_os.") MOTIVO: ".$motivo." FECHA INHIBICION: (".$fecha.")";
+}
+
+$motivo1 = $nro_practica;
+
+return new soapval('return','xsd:string',$motivo1);
+}
+
+
+
+function buscar_orden($cod_grabacion){
+include ("../../conexiones/config.inc.php");
+$cod_grabacion1=$cod_grabacion;
+
+$sql2="select * from ordenes where cod_grabacion = $cod_grabacion1";
+$result2 = $db->Execute($sql2);
+$cod_gr=$result2->fields["cod_grabacion"];
+
+
+
+return new soapval('return','xsd:string', $cod_gr);
+}
+
+
+
+
+function practicas_autorizadas($sql,$apellido){
+include ("../../conexiones/config.inc.php");
+$practicas=$sql;
+$nro_os=$apellido; 
+
+$sql2="select * from a_practicas_rechazadas where nro_os = $nro_os and cod_practica = $practicas and tipo = 'A'";
+$result2 = $db->Execute($sql2);
+$cod_practica=$result2->fields["cod_practica"];
+$motivo=$result2->fields["motivo"];
+$fecha=$result2->fields["fecha"];
+$tipo=$result2->fields["tipo"];
+
+$sql2="select * from convenio_practica where cod_practica = $practicas";
+$result2 = $db->Execute($sql2);
+$nombre_practica=$result2->fields["practica"];
+
+$sql2="select * from datos_os where nro_os = $nro_os";
+$result2 = $db->Execute($sql2);
+$sigla=$result2->fields["practica"];
+
+
+
+$dia = substr($fecha,8,2);
+$mes = substr($fecha,5,2);
+$anio = substr($fecha,0,4);
+$fecha = $dia."/".$mes."/".$anio;
+
+if ($cod_practica != ""){
+$motivo1 = "RECUERDE AUTORIZAR PRACTICA (".$cod_practica.") ".$nombre_practica." OBRA SOCIAL: ".$sigla." (".$nro_os.") CASO CONTRARIO SERA DEBITADA.  MOTIVO: ".$motivo.". FECHA: ".$fecha.")";
+}
+
+
+return new soapval('return','xsd:string',$motivo1);
+}
+
+
+
+$server->service($HTTP_RAW_POST_DATA);
+
+?>

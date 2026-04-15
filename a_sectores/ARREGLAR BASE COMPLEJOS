@@ -1,0 +1,51 @@
+<?php
+
+
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon1_2` `renglon1_2` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon1_3` `renglon1_3` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon2_2` `renglon2_2` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon2_3` `renglon2_3` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon3_2` `renglon3_2` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon3_3` `renglon3_3` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon4_2` `renglon4_2` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon4_3` `renglon4_3` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon5_2` `renglon5_2` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon5_3` `renglon5_3` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon6_2` `renglon6_2` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon6_3` `renglon6_3` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon7_2` `renglon7_2` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon7_3` `renglon7_3` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon8_2` `renglon8_2` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon8_3` `renglon8_3` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon9_2` `renglon9_2` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon9_3` `renglon9_3` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon10_2` `renglon10_2` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon10_3` `renglon10_3` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon11_2` `renglon11_2` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon11_3` `renglon11_3` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon12_2` `renglon12_2` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon12_3` `renglon12_3` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon13_2` `renglon13_2` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon13_3` `renglon13_3` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon14_2` `renglon14_2` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon14_3` `renglon14_3` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon15_2` `renglon15_2` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon15_3` `renglon15_3` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon16_2` `renglon16_2` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `convenio_practica_complejo` CHANGE `renglon16_3` `renglon16_3` VARCHAR(80) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ 

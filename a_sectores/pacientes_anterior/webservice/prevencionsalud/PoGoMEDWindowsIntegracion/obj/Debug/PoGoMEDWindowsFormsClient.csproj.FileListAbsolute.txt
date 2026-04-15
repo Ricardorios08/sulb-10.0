@@ -1,0 +1,60 @@
+C:\Users\hrosso\Documents\Visual Studio 2008\Projects\PoGoMEDWindowsFormsClient\PoGoMEDWindowsFormsClient\bin\Debug\wse3policyCache.config
+C:\Users\hrosso\Documents\Visual Studio 2008\Projects\PoGoMEDWindowsFormsClient\PoGoMEDWindowsFormsClient\bin\Debug\PoGoMEDWindowsFormsClient.exe.config
+C:\Users\hrosso\Documents\Visual Studio 2008\Projects\PoGoMEDWindowsFormsClient\PoGoMEDWindowsFormsClient\bin\Debug\PoGoMEDWindowsFormsClient.exe
+C:\Users\hrosso\Documents\Visual Studio 2008\Projects\PoGoMEDWindowsFormsClient\PoGoMEDWindowsFormsClient\bin\Debug\PoGoMEDWindowsFormsClient.pdb
+C:\Users\hrosso\Documents\Visual Studio 2008\Projects\PoGoMEDWindowsFormsClient\PoGoMEDWindowsFormsClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hrosso\Documents\Visual Studio 2008\Projects\PoGoMEDWindowsFormsClient\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.Form1.resources
+C:\Users\hrosso\Documents\Visual Studio 2008\Projects\PoGoMEDWindowsFormsClient\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.Properties.Resources.resources
+C:\Users\hrosso\Documents\Visual Studio 2008\Projects\PoGoMEDWindowsFormsClient\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.csproj.GenerateResource.Cache
+C:\Users\hrosso\Documents\Visual Studio 2008\Projects\PoGoMEDWindowsFormsClient\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.exe
+C:\Users\hrosso\Documents\Visual Studio 2008\Projects\PoGoMEDWindowsFormsClient\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.pdb
+C:\Trabajo\PoGoMED.Integracion\PoGoMEDWindowsFormsClient\bin\Debug\wse3policyCache.config
+C:\Trabajo\PoGoMED.Integracion\PoGoMEDWindowsFormsClient\bin\Debug\PoGoMEDWindowsFormsClient.exe.config
+C:\Trabajo\PoGoMED.Integracion\PoGoMEDWindowsFormsClient\bin\Debug\PoGoMEDWindowsFormsClient.exe
+C:\Trabajo\PoGoMED.Integracion\PoGoMEDWindowsFormsClient\bin\Debug\PoGoMEDWindowsFormsClient.pdb
+C:\Trabajo\PoGoMED.Integracion\PoGoMEDWindowsFormsClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Trabajo\PoGoMED.Integracion\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.Form1.resources
+C:\Trabajo\PoGoMED.Integracion\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.Properties.Resources.resources
+C:\Trabajo\PoGoMED.Integracion\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.csproj.GenerateResource.Cache
+C:\Trabajo\PoGoMED.Integracion\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.exe
+C:\Trabajo\PoGoMED.Integracion\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.pdb
+D:\Credencial-Pogomed\PoGoMED.Integracion_WinFormClient\PoGoMEDWindowsFormsClient\bin\Debug\PoGoMEDWindowsFormsClient.exe.config
+D:\Credencial-Pogomed\PoGoMED.Integracion_WinFormClient\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.exe
+D:\Credencial-Pogomed\PoGoMED.Integracion_WinFormClient\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.pdb
+D:\Credencial-Pogomed\PoGoMED.Integracion_WinFormClient\PoGoMEDWindowsFormsClient\bin\Debug\wse3policyCache.config
+D:\Credencial-Pogomed\PoGoMED.Integracion_WinFormClient\PoGoMEDWindowsFormsClient\bin\Debug\PoGoMEDWindowsFormsClient.exe
+D:\Credencial-Pogomed\PoGoMED.Integracion_WinFormClient\PoGoMEDWindowsFormsClient\bin\Debug\PoGoMEDWindowsFormsClient.pdb
+D:\Credencial-Pogomed\PoGoMED.Integracion_WinFormClient\PoGoMEDWindowsFormsClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Credencial-Pogomed\PoGoMED.Integracion_WinFormClient\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.Form1.resources
+D:\Credencial-Pogomed\PoGoMED.Integracion_WinFormClient\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.Properties.Resources.resources
+D:\Credencial-Pogomed\PoGoMED.Integracion_WinFormClient\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.csproj.GenerateResource.Cache
+D:\Todo Pogomed\RequerimientoJavaIntegracion\PoGoMED.IntegracionPruebaSebastian\PoGoMEDWindowsFormsClient\bin\Debug\PoGoMEDWindowsFormsClient.exe.config
+D:\Todo Pogomed\RequerimientoJavaIntegracion\PoGoMED.IntegracionPruebaSebastian\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.exe
+D:\Todo Pogomed\RequerimientoJavaIntegracion\PoGoMED.IntegracionPruebaSebastian\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.pdb
+C:\GEL\PoGoMEDWindowsFormsClient\bin\Debug\PoGoMEDWindowsFormsClient.exe.config
+C:\GEL\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.exe
+C:\GEL\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.pdb
+C:\GEL\PoGoMEDWindowsFormsClient\bin\Debug\wse3policyCache.config
+C:\GEL\PoGoMEDWindowsFormsClient\bin\Debug\PoGoMEDWindowsFormsClient.exe
+C:\GEL\PoGoMEDWindowsFormsClient\bin\Debug\PoGoMEDWindowsFormsClient.pdb
+C:\GEL\PoGoMEDWindowsFormsClient\obj\Debug\ResolveAssemblyReference.cache
+C:\GEL\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.Form1.resources
+C:\GEL\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.Properties.Resources.resources
+C:\GEL\PoGoMEDWindowsFormsClient\obj\Debug\PoGoMEDWindowsFormsClient.csproj.GenerateResource.Cache
+C:\GEL\PoGoMEDWindowsIntegracion\bin\Debug\PoGoMEDWindowsFormsClient.exe.config
+C:\GEL\PoGoMEDWindowsIntegracion\obj\Debug\PoGoMEDWindowsFormsClient.exe
+C:\GEL\PoGoMEDWindowsIntegracion\obj\Debug\PoGoMEDWindowsFormsClient.pdb
+C:\GEL\PoGoMEDWindowsIntegracion\bin\Debug\wse3policyCache.config
+C:\GEL\PoGoMEDWindowsIntegracion\bin\Debug\PoGoMEDWindowsFormsClient.exe
+C:\GEL\PoGoMEDWindowsIntegracion\bin\Debug\PoGoMEDWindowsFormsClient.pdb
+C:\GEL\PoGoMEDWindowsIntegracion\obj\Debug\ResolveAssemblyReference.cache
+C:\GEL\PoGoMEDWindowsIntegracion\obj\Debug\PoGoMEDWindowsFormsClient.Form1.resources
+C:\GEL\PoGoMEDWindowsIntegracion\obj\Debug\PoGoMEDWindowsFormsClient.Properties.Resources.resources
+C:\GEL\PoGoMEDWindowsIntegracion\obj\Debug\PoGoMEDWindowsFormsClient.csproj.GenerateResource.Cache
+C:\utiles\EasyPHP-5.3.8.1\www\laboratorio.4.0\a_sectores\webservice\prevencionsalud\PoGoMEDWindowsIntegracion\bin\Debug\PoGoMEDWindowsFormsClient.exe.config
+C:\utiles\EasyPHP-5.3.8.1\www\laboratorio.4.0\a_sectores\webservice\prevencionsalud\PoGoMEDWindowsIntegracion\obj\Debug\PoGoMEDWindowsFormsClient.exe
+C:\utiles\EasyPHP-5.3.8.1\www\laboratorio.4.0\a_sectores\webservice\prevencionsalud\PoGoMEDWindowsIntegracion\obj\Debug\PoGoMEDWindowsFormsClient.pdb
+C:\utiles\EasyPHP-5.3.8.1\www\laboratorio.4.0\a_sectores\webservice\prevencionsalud\PoGoMEDWindowsIntegracion\obj\Debug\ResolveAssemblyReference.cache
+C:\utiles\EasyPHP-5.3.8.1\www\laboratorio.4.0\a_sectores\webservice\prevencionsalud\PoGoMEDWindowsIntegracion\obj\Debug\PoGoMEDWindowsFormsClient.Form1.resources
+C:\utiles\EasyPHP-5.3.8.1\www\laboratorio.4.0\a_sectores\webservice\prevencionsalud\PoGoMEDWindowsIntegracion\obj\Debug\PoGoMEDWindowsFormsClient.Properties.Resources.resources
+C:\utiles\EasyPHP-5.3.8.1\www\laboratorio.4.0\a_sectores\webservice\prevencionsalud\PoGoMEDWindowsIntegracion\obj\Debug\PoGoMEDWindowsFormsClient.csproj.GenerateResource.Cache

@@ -1,0 +1,77 @@
+<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+
+<document>
+
+	<pelicula>
+
+		<titulo>titulo 1</titulo>
+
+		<ano>2014</ano>
+
+		<autores>
+
+			<autor>
+
+				<nombre>Juan</nombre>
+
+				<nacionalidad>España</nacionalidad>
+
+			</autor>
+
+			<autor>
+
+				<nombre>Jose</nombre>
+
+				<nacionalidad>España</nacionalidad>
+
+			</autor>
+
+			<autor>
+
+				<nombre>Ana</nombre>
+
+				<nacionalidad>Italia</nacionalidad>
+
+			</autor>
+
+		</autores>
+
+	</pelicula>
+
+	<pelicula>
+
+		<titulo>titulo 2</titulo>
+
+		<ano>2010</ano>
+
+		<autores>
+
+			<autor>
+
+				<nombre>Pedro</nombre>
+
+				<nacionalidad>España</nacionalidad>
+
+			</autor>
+
+			<autor>
+
+				<nombre>Mark</nombre>
+
+				<nacionalidad>EEUU</nacionalidad>
+
+			</autor>
+
+			<autor>
+
+				<nombre>Juan</nombre>
+
+				<nacionalidad>España</nacionalidad>
+
+			</autor>
+
+		</autores>
+
+	</pelicula>
+
+</document>

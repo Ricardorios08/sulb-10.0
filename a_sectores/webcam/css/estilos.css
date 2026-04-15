@@ -1,0 +1,44 @@
+#cuadro_camara {
+		background-color: #444;
+		padding-left: 30px;
+		padding-top:20px;
+	}
+
+	.botones_cam {
+		background-color:#FFF;
+		margin-top:10px;
+		width:100px;
+		height:40px;
+	}
+	.formulario {
+		color: #FFF;
+		font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	}
+	#gallery {
+		background-color: #444;
+		width: 100%;
+	}
+	#gallery ul { list-style: none; }
+	#gallery ul li { display: inline; }
+	#gallery ul img {
+		border: 5px solid #3e3e3e;
+		border-width: 5px 5px 5px;
+	}
+	#gallery ul a:hover img {
+		border: 5px solid #fff;
+		border-width: 5px 5px 5px;
+		color: #fff;
+	}
+#gallery ul a:hover { color: #fff; }
+
+input{
+	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	border: solid 1px #CCC;
+	padding: 4px 4px;
+	margin-right: 4px;
+	margin-top: 4px;
+    margin-left: 0px;
+}

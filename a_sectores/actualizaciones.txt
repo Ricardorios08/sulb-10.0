@@ -1,0 +1,60 @@
+19-09-2015
+
+Para agregar RAST 
+Copiar y reemplazar:
+analisis/practicas/practicas_mod_completas.php					modificarlo
+analisis/practicas/6614_rast.php						crearlo
+analisis/mod_rast.php								crearlo
+analisis/guardar_normal.php							crearlo
+auditoria/menu_practicas.php							modificarlo
+auditoria/antibiotico/agregar_rast.php						crearlo
+auditoria/antibiotico/guardar_alergeno.php					crearlo
+auditoria/antibiotico/ver_alergeno.php						crearlo
+auditoria/antibiotico/borrar_alergeno.php					crearlo
+modelos/m_modelo1_vertical/detalle_rast.php					crearlo.
+modelos/m_modelo1_vertical/complejos.php					modificarlo	
+
+
+CREATE TABLE IF NOT EXISTS `rast` (
+  `rast` varchar(100) NOT NULL,
+  `cod_rast` int(10) NOT NULL AUTO_INCREMENT,
+  KEY `cod_antibiotico` (`cod_rast`)
+) 
+
+CREATE TABLE IF NOT EXISTS `detalle_rast` (
+  `cod_grabacion` int(25) NOT NULL DEFAULT '0',
+  `nro_os` int(6) NOT NULL DEFAULT '0',
+  `nro_paciente` int(8) NOT NULL DEFAULT '0',
+  `nro_orden` varchar(20) NOT NULL DEFAULT '0',
+  `nro_practica` int(10) DEFAULT '0',
+  `clase_1` varchar(30) NOT NULL,
+  `clase_2` varchar(30) NOT NULL,
+  `clase_3` varchar(30) NOT NULL,
+  `clase_4` varchar(60) NOT NULL,
+  `nivel_1` varchar(10) NOT NULL,
+  `nivel_2` varchar(10) NOT NULL,
+  `nivel_3` varchar(10) NOT NULL,
+  `nivel_4` varchar(10) NOT NULL,
+  `rast1` varchar(30) NOT NULL,
+  `rast2` varchar(30) NOT NULL,
+  `rast3` varchar(30) NOT NULL,
+  `rast4` varchar(30) NOT NULL,
+  `resultado1` varchar(10) NOT NULL,
+  `resultado2` varchar(10) NOT NULL,
+  `resultado3` varchar(10) NOT NULL,
+  `resultado4` varchar(10) NOT NULL,
+  `observaciones` varchar(120) NOT NULL,
+  PRIMARY KEY (`cod_grabacion`),
+  KEY `nro_laboratorio` (`nro_paciente`),
+  KEY `nro_orden` (`nro_orden`),
+  KEY `cod_grabacion` (`cod_grabacion`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+INSERT INTO `convenio_referencia` (`cod_practica`, `cod_operacion`, `tipo`, `desde`, `hasta`, `unidades`, `columna1`, `columna2`, `anio_d`, `anio_h`, `nro_ref`) VALUES
+(6614, 715, '', '0.00', '0.50', '', 'Clase 0 ', 'Nivel: Nulo', 0, 0, 0),
+(6614, 717, '', '0.51', '1.00', '', 'Clase: 1', 'Nivel: Bajo', 0, 0, 0),
+(6614, 718, '', '1.10', '5.00', '', 'Clase: 2', 'Moderado', 0, 0, 0),
+(6614, 719, '', '5.10', '25.00', '', 'Clase: 3', 'Nivel: Alto', 0, 0, 0),
+(6614, 720, '', '25.10', '75.00', '', 'Clase: 4', 'Nivel: Muy Alto', 0, 0, 0),
+(6614, 721, '', '75.00', '0.00', '', 'Clase: 5', 'Estremadamente alto', 0, 0, 0);
